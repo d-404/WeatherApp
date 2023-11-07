@@ -9,7 +9,7 @@ const HomeScreen = ({ navigation }) => {
     const [error, setError] = useState(null);
 
     const handleSearch = async () => {
-        Keyboard.dismiss(); // Dismiss the keyboard
+        Keyboard.dismiss();
         if (!city.trim()) {
             setError('Please enter a city name.');
             return;
